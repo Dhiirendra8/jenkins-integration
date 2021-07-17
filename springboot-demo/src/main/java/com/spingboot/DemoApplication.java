@@ -26,6 +26,8 @@ public class DemoApplication {
 	public void medhod() {
 		System.out.println("This is method log");
 		service.ServiceMethod();
+		
+		System.out.println("Not working");
 	}
 
 }
