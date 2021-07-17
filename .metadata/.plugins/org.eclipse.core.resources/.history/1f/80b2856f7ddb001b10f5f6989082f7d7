@@ -1,0 +1,54 @@
+package study.java.core5.otherconcepts;
+
+import java.util.Comparator;
+
+//A comparable object is capable of comparing itself with another object.
+//Unlike Comparable, Comparator is external to the element type we are comparing. It’s a separate class.
+
+class Movie implements Comparable<Movie> {
+
+	private double rating;
+	private String name;
+	private int year;
+
+	// Used to sort movies by year 
+	public int compareTo(Movie m) {
+
+		return this.year - m.year; 
+	}
+
+	// Constructor
+	public Movie(String nm, double rt, int yr) {
+		this.name = nm;
+		this.rating = rt;
+		this.year = yr;
+	}
+
+	// Getter methods for accessing private data
+	public double getRating() {
+		return rating;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getYear() {
+		return year;
+	}
+}
+
+class NameCompare implements Comparator<Movie> {
+
+	public int compare(Movie m1, Movie m2) {
+
+		return m1.getName().compareTo(m2.getName());
+	}
+
+}
+
+public class ComparatorComparable {
+	public static void main(String[] args) {
+
+	}
+}

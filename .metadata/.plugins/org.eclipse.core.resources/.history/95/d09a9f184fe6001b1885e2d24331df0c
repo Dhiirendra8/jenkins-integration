@@ -1,0 +1,5 @@
+package com.spingboot.aop.advice;
+
+public @interface MyAnnotation {
+
+}

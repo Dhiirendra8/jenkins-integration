@@ -1,0 +1,16 @@
+package com.spingboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.spingboot.aop.advice.MyAnnotation;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	@MyAnnotation
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+
+}

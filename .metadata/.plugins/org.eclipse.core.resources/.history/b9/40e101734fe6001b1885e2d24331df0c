@@ -1,0 +1,23 @@
+package com.spingboot.aop.advice;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class MyAOPAdvice {
+	
+	
+	@Pointcut("@annotation(com.spingboot.aop.advice.MyAnnotation)")
+	@Around("@annotation(com.spingboot.aop.advice.MyAnnotation)")
+	public void myAdvice(ProceedingJoinPoint pjp) throws Throwable {
+		System.out.println("# ...Before Advice");
+		pjp.proceed();
+		
+		System.out.println("After Advice ... #");
+		
+	}
+}

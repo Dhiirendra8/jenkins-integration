@@ -1,0 +1,35 @@
+package study.java.core5.otherconcepts;
+
+import java.util.Comparator;
+
+//A comparable object is capable of comparing itself with another object.
+//Unlike Comparable, Comparator is external to the element type we are comparing. It’s a separate class.
+
+public class ComparableClass implements Comparable<Movie>{
+
+	public int compareTo(T o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class ComparatorClass implements Comparator<Movie>{
+
+	public int compare(T o1, T o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class Movie{
+	
+}
+
+
+public class ComparatorComparable {
+	public static void main(String[] args) {
+		
+	}
+}

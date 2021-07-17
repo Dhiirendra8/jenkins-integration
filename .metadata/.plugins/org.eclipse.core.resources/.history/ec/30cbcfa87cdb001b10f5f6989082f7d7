@@ -1,0 +1,14 @@
+package study.java.core5.otherconcepts;
+
+//A comparable object is capable of comparing itself with another object.
+//Unlike Comparable, Comparator is external to the element type we are comparing. It’s a separate class.
+
+
+
+
+
+public class ComparatorComparable {
+	public static void main(String[] args) {
+		
+	}
+}
